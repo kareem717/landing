@@ -9,13 +9,11 @@ const SectionTag: React.FC<SectionTagProps> = ({
 	...props
 }) => {
 	return (
-		<div className="flex flex-col md:flex-row w-full justify-center md:justify-start items-center gap-6">
-			<div className="flex-col justify-start items-start inline-flex">
-				<div className="w-[min(300px,40vw)] h-[min(60px,8vw)] md:w-[min(400px,20vw)] px-4 bg-green-600 md:h-[min(80px,5vw)] rounded-md flex-col justify-center items-center gap-2.5 flex text-[min(6vw,30px)] font-medium whitespace-nowrap">
-					{name}
-				</div>
-			</div>
-			<p className="text-center font-normal text-[min(3vw,15px)] max-w-[475px] ">
+		<div className="flex flex-col md:flex-row w-full justify-center md:justify-start items-center gap-5 md:gap-8">
+			<span className="bg-green-600 rounded-md px-[2px] md:px-2 text-[min(6vw,30px)] font-medium whitespace-nowrap">
+				{name}
+			</span>
+			<p className="text-center md:text-left font-normal text-[min(3vw,15px)] max-w-[475px] ">
 				{description}
 			</p>
 		</div>

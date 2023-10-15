@@ -1,4 +1,5 @@
 import SectionTag from "@/components/section-tag";
+import FAQSection from "@/components/sections/faqs";
 import Hero from "@/components/sections/main-hero";
 import TeamSection from "@/components/sections/team";
 import UseCaseSection from "@/components/sections/use-case";
@@ -24,6 +25,14 @@ export default function Home() {
 				tempor incididunt ut labore et dolore magna aliqua."
 				/>
 				<TeamSection />
+			</section>
+			<section id="#faqs" className="flex flex-col gap-10">
+				<SectionTag
+					name="The Team"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua."
+				/>
+				<FAQSection />
 			</section>
 		</main>
 	);

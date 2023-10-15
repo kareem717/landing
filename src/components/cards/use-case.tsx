@@ -67,9 +67,8 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 					cardVariants({ bg })
 				)}
 			>
-				{/*// Add variant colours */}
 				<div className="col-span-1">
-					<div className="flex-col justify-start items-start inline-flex text-[min(5vw,45px)] font-medium">
+					<div className="flex-col justify-start items-start inline-flex text-[min(3vw,45px)] md:text-[min(1vw,45px)] font-medium">
 						<div
 							className={cn(
 								"px-1  rounded-md flex-col justify-start items-start gap-2.5 flex",
@@ -78,14 +77,14 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 						>
 							{line1}
 						</div>
-						<div
+						<span
 							className={cn(
-								"px-1  rounded-md flex-col justify-start items-start gap-2.5 flex",
+								"px-1 rounded-md flex-col justify-start items-start gap-2.5 flex",
 								cardVariants({ text })
 							)}
 						>
 							{line2}
-						</div>
+						</span>
 					</div>
 				</div>
 
