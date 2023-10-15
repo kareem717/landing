@@ -1,4 +1,4 @@
-import UseCaseCard from "../use-case-card";
+import UseCaseCard from "../cards/use-case";
 
 export default function UseCaseSection() {
 	return (

@@ -1,8 +1,8 @@
 import { ComponentPropsWithoutRef } from "react";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import { Icons } from "./icons";
+import { Icons } from "../icons";
 import {
 	Dialog,
 	DialogContent,
@@ -12,7 +12,7 @@ import {
 	DialogTrigger,
 } from "@/components/ui/dialog";
 import Image from "next/image";
-import { AspectRatio } from "./ui/aspect-ratio";
+import { AspectRatio } from "../ui/aspect-ratio";
 const cardVariants = cva("", {
 	variants: {
 		text: {
@@ -30,7 +30,7 @@ const cardVariants = cva("", {
 });
 
 export interface UseCaseCardProps
-	extends React.ButtonHTMLAttributes<HTMLDivElement>,
+	extends ComponentPropsWithoutRef<"div">,
 		VariantProps<typeof cardVariants> {
 	line1: string;
 	line2: string;
