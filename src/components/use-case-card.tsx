@@ -12,11 +12,20 @@ import {
 	DialogTrigger,
 } from "@/components/ui/dialog";
 import Image from "next/image";
+import { AspectRatio } from "./ui/aspect-ratio";
 const cardVariants = cva("", {
 	variants: {
-		text: { default: "bg-green-600" },
-		icon: { default: "fill-primary stroke-lime-300" },
-		bg: { default: "bg-secondary" },
+		text: {
+			default: "bg-green-600",
+			black: "bg-secondary",
+			green: "bg-secondary",
+		},
+		icon: {
+			default: "fill-primary stroke-lime-300",
+			black: "fill-secondary stroke-primary text-secondary",
+			green: "fill-primary stroke-lime-300",
+		},
+		bg: { default: "bg-secondary", black: "bg-primary", green: "bg-green-600" },
 	},
 });
 
@@ -47,20 +56,20 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 	return (
 		<div
 			className={cn(
-				"rounded-lg bg-card text-card-primary shadow-sm w-[min(900px,40vw)] h-[min(450px,20vw)]",
+				"rounded-lg bg-card text-card-primary shadow-sm",
 				className
 			)}
 			{...props}
 		>
 			<div
 				className={cn(
-					"grid grid-cols-2 grid-rows-2 p-4 rounded-3xl shadow border border-b-4 border-primary ",
+					"grid grid-cols-2 grid-rows-2 p-4 rounded-3xl shadow border  border-b-[6px] border-r-[4px] border-primary aspect-[2]",
 					cardVariants({ bg })
 				)}
 			>
 				{/*// Add variant colours */}
-				<div className="col-span-2 md:col-span-1">
-					<div className="w-40 h-20 flex-col justify-start items-start inline-flex text-[min(2.5vw,30px)] font-medium">
+				<div className="col-span-1">
+					<div className="flex-col justify-start items-start inline-flex text-[min(5vw,45px)] font-medium">
 						<div
 							className={cn(
 								"px-1  rounded-md flex-col justify-start items-start gap-2.5 flex",
@@ -87,7 +96,12 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 								<Icons.arrowUp
 									className={cn("rotate-45 h-8 w-8 ", cardVariants({ icon }))}
 								/>
-								<span className="hidden md:block font-semibold">
+								<span
+									className={cn(
+										"text-sm md:text-base font-semibold",
+										cardVariants({ icon })
+									)}
+								>
 									Learn More
 								</span>
 							</div>
@@ -101,7 +115,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 					</Dialog>
 				</div>
 
-				<div className="md:row-start-1 md:col-start-2 md:row-span-2 p-8">
+				<div className="row-start-1 col-start-2 row-span-2 p-8 flex justify-center items-center w-full h-full">
 					<Image
 						layout="responsive"
 						src={src}

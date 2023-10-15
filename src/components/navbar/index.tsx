@@ -23,21 +23,28 @@ export default function Navbar() {
 
 				<ul className="hidden md:flex gap-6 justify-end items-center w-3/4">
 					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
-						About Us
+						Use Cases
 					</li>
 					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
 						Team
 					</li>
 					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
-						Use Cases
+						About Us
 					</li>
 					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
 						Blog
 					</li>
+					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
+						Contact Us
+					</li>
+					<li className="hover:opacity-100 opacity-75 transition cursor-pointer">
+						FAQs
+					</li>
+
 					<Button
 						variant={"outline"}
 						size={"lg"}
-						className="animate-pulse whitespace-nowrap px-4"
+						className="animate-pulse whitespace-nowrap px-4 hidden lg:block"
 					>
 						Request Beta Access
 					</Button>

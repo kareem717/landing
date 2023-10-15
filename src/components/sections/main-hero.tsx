@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ComponentPropsWithoutRef } from "react";
@@ -16,12 +17,12 @@ const Hero: React.FC<HeroProps> = ({ className, ...props }) => {
 
 				{/* sketch */}
 				<div className="md:w-1/2 md:self-stretch md:hidden aspect-[16/9] border-4 rounded-lg my-5 drop-shadow-lg">
-					<Image
-						layout="responsive"
-						src={"/dashboard.png"}
-						alt={"Picture"}
-						width={800}
-						height={500}
+					<img
+						style={{ aspectRatio: "16/9" }}
+						src="/dashboard.png"
+						alt="Picture"
+						width="800"
+						height="500"
 					/>
 				</div>
 
