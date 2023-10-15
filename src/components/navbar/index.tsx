@@ -12,7 +12,7 @@ export default function Navbar() {
 							<span className="sr-only">BidDropper</span>
 							<span className="tracking-tight hover:cursor-pointer">
 								bid
-								<span className="text-[#16a34a]">dropper</span>
+								<span className="text-green-600">dropper</span>
 							</span>
 							<sup className="absolute left-[calc(100%+.1rem)] top-0 text-xs font-bold text-primary">
 								[BETA]

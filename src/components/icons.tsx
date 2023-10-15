@@ -3,6 +3,7 @@ import {
 	AlertTriangle,
 	ArrowDown,
 	ArrowUp,
+	ArrowRightCircle,
 	AlignJustify,
 	ArrowRightSquare,
 	BarChart3,
@@ -71,7 +72,7 @@ import {
 	VolumeX,
 	Wallet,
 	X,
-  XSquare,
+	XSquare,
 	type LucideIcon,
 	type LucideProps,
 } from "lucide-react";
@@ -79,6 +80,7 @@ import {
 export type Icon = LucideIcon;
 
 export const Icons = {
+	arrowRightCircle: ArrowRightCircle,
 	home: Home,
 	building: Building,
 	building2: Building2,
@@ -86,8 +88,8 @@ export const Icons = {
 	moon: Moon,
 	arrowRightSquare: ArrowRightSquare,
 	star: Star,
-  alignJustify: AlignJustify,
-  xSquare: XSquare,
+	alignJustify: AlignJustify,
+	xSquare: XSquare,
 	twitter: Twitter,
 	close: X,
 	spinner: Loader2,
@@ -98,7 +100,6 @@ export const Icons = {
 	chevronUp: ChevronUp,
 	chevronDown: ChevronDown,
 	chevronUpDown: ChevronsUpDown,
-	arrowUp: ArrowUp,
 	arrowDown: ArrowDown,
 	dot: Dot,
 	menu: Menu,
@@ -152,6 +153,25 @@ export const Icons = {
 	clothing: Shirt,
 	shoes: Footprints,
 	accessories: HardHat,
+	arrowUp: (props: LucideProps) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			className="lucide lucide-arrow-up-circle"
+			{...props}
+		>
+			<circle cx="12" cy="12" r="10" stroke-width="0" />
+			<path d="m16 12-4-4-4 4" />
+			<path d="M12 16V8" />
+		</svg>
+	),
 	attachedBuilding: (props: LucideProps) => (
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53" {...props}>
 			<path
