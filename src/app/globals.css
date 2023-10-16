@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -33,6 +42,8 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    scroll-behavior: smooth;
   }
  
   .dark {

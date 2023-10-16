@@ -31,7 +31,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 			)}
 			{...props}
 		>
-			<div className="relative flex flex-col gap-4 p-4 rounded-3xl shadow border bg-card  border-b-[6px] border-r-[4px] border-primary aspect-[1]">
+			<div className="relative flex flex-col gap-4 p-4 rounded-3xl shadow border bg-card  border-b-[6px] border-r-[4px] border-primary">
 				<div className="w-full flex justify-between items-center">
 					<div className="flex items-center justify-center">
 						<div className="rounded-full overflow-hidden bg-primary shadow border-[min(10px,1vw)] border-green-600 w-[min(300px,30vw)] lg:w-[min(250px,20vw)] h-[min(300px,30vw)] lg:h-[min(250px,20vw)]">
@@ -58,10 +58,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
 				<Separator className="bg-primary h-[2px]" />
 				<div className="w-full">
 					<p>
-						{/* A seasoned full-stack developer with a wealth of experience in
-						building scalable applications. He is a founding engineer at our
-						company, where he leverages his technical skills to drive innovation
-						and growth. */}
+
 						{bio}
 					</p>
 				</div>

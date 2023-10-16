@@ -71,7 +71,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 					<div className="flex-col justify-start items-start inline-flex text-[min(3vw,45px)] md:text-[min(1vw,45px)] font-medium">
 						<div
 							className={cn(
-								"px-1  rounded-md flex-col justify-start items-start gap-2.5 flex",
+								"px-1  rounded-md flex-col justify-start items-start gap-2.5 flex capitalize",
 								cardVariants({ text })
 							)}
 						>
@@ -79,7 +79,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 						</div>
 						<span
 							className={cn(
-								"px-1 rounded-md flex-col justify-start items-start gap-2.5 flex",
+								"px-1 rounded-md flex-col justify-start items-start gap-2.5 flex capitalize",
 								cardVariants({ text })
 							)}
 						>
@@ -93,11 +93,11 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 						<DialogTrigger>
 							<div className="flex gap-2 items-center cursor-pointer hover:opacity-60 transition w-8 h-8 md:w-32">
 								<Icons.arrowUp
-									className={cn("rotate-45 h-8 w-8 ", cardVariants({ icon }))}
+									className={cn("rotate-45 w-[max(5vw,16px)] h-[max(5vw,16px)] sm:h-8 sm:w-8 ", cardVariants({ icon }))}
 								/>
 								<span
 									className={cn(
-										"text-sm md:text-base font-semibold",
+										"hidden md:block text-sm md:text-base font-semibold",
 										cardVariants({ icon })
 									)}
 								>
@@ -114,7 +114,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 					</Dialog>
 				</div>
 
-				<div className="row-start-1 col-start-2 row-span-2 p-8 flex justify-center items-center w-full h-full">
+				<div className="row-start-1 col-start-2 row-span-2 p-8 flex justify-center items-center w-full h-full max-h-[90%] max-w-[90%]">
 					<Image
 						layout="responsive"
 						src={src}

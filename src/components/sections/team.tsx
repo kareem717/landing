@@ -7,24 +7,19 @@ export default function TeamSection() {
 				<TeamMemberCard
 					headshot="/headshots/kareem.PNG"
 					name="Kareem Yakubu"
-          title="CEO & Founding Engineer"
-					bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-						risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-						nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-						ligula massa, varius a, semper congue, euismod non, mi."
-					linkedin="#"
-					github="#"
+					title="Founding Engineer"
+					bio="Seasoned full-stack developer, specializing in Next.js and React.Possesses a wealth of experience in building web, AI, and finance applications. The tech lead and founding engineer at biddropper, leveraging his technical skills to drive innovation
+          and growth."
+					linkedin="https://www.linkedin.com/in/kareemyakubu/"
+					github="https://github.com/kareem717"
 				/>
 				<TeamMemberCard
 					headshot="/headshots/luke.png"
 					name="Luke Gannon"
-          title="Contributing Engineer"
-					bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-						risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-						nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-						ligula massa, varius a, semper congue, euismod non, mi."
-					linkedin="#"
-					github="#"
+					title="Contributing Engineer"
+					bio="A thoroughly experienced web and mobile developer, specializing in React and Next.js. Years of experience working with mobile, AI, and finance applications. A contributing engineer at biddropper, producing high-quality code and full-stack design."
+					linkedin="https://www.linkedin.com/in/forrestdevs/"
+					github="https://github.com/ForrestDevs"
 				/>
 			</div>
 		</div>

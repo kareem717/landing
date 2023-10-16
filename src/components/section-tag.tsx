@@ -13,7 +13,7 @@ const SectionTag: React.FC<SectionTagProps> = ({
 			<span className="bg-green-600 rounded-md px-[2px] md:px-2 text-[min(6vw,30px)] font-medium whitespace-nowrap">
 				{name}
 			</span>
-			<p className="text-center md:text-left font-normal text-[min(3vw,15px)] max-w-[475px] ">
+			<p className="text-center md:text-left font-normal text-[min(3vw,15px)] max-w-[500px]">
 				{description}
 			</p>
 		</div>

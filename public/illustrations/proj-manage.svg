@@ -2,14 +2,14 @@
     viewBox="0 0 1177.82 724.47" xmlns:xlink="http://www.w3.org/1999/xlink" class="bg-green-500">
     <style>
         .theme-path {
-            fill: 	#1e293b /* default color for light mode */
+            fill: #f1f5f9	 /* default color for light mode */
         }
         .wood {
             fill: 	#f1c0c0 /* default color for light mode */
         }
         @media (prefers-color-scheme: dark) {
             .theme-path {
-                fill:  	#f1f5f9 /* color for dark mode */
+                fill:  	#1e293b /* color for dark mode */
             }
             .wood {
                 fill: 	#7F6019 /* color for dark mode */
