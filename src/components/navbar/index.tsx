@@ -17,7 +17,7 @@ export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className=" sticky top-0 z-10 bg-background/60 backdrop-blur-xl">
+		<nav className=" sticky top-0 z-40 bg-background/60 backdrop-blur-xl">
 			<div className="flex flex-row justify-around items-center py-2 max-w-screen-2xl mx-auto ">
 				<div>
 					<a className="flex flex-row items-baseline" href="/">
