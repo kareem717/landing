@@ -3,7 +3,6 @@
         .b {
             stroke: white;
             fill: white;
-            /* default color for light mode */
         }
 
         @media (prefers-color-scheme: dark) {
