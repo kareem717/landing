@@ -25,7 +25,7 @@ const cardVariants = cva("", {
 			black: "fill-secondary stroke-primary text-secondary",
 			green: "fill-primary stroke-lime-300",
 		},
-		bg: { default: "bg-secondary", black: "bg-primary", green: "bg-green-600" },
+		bg: { default: "border-primary", black: "bg-foreground border-primary", green: "bg-primary border-foreground" },
 	},
 });
 
@@ -63,7 +63,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 		>
 			<div
 				className={cn(
-					"grid grid-cols-2 grid-rows-2 p-4 rounded-3xl shadow border  border-b-[6px] border-r-[4px] border-primary aspect-[2]",
+					"grid grid-cols-2 grid-rows-2 p-4 rounded-3xl shadow border  border-b-[6px] border-r-[4px]  aspect-[2]",
 					cardVariants({ bg })
 				)}
 			>
