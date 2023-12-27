@@ -13,14 +13,6 @@ export default function TeamSection() {
 					linkedin="https://www.linkedin.com/in/kareemyakubu/"
 					github="https://github.com/kareem717"
 				/>
-				<TeamMemberCard
-					headshot="/headshots/luke.png"
-					name="Luke Gannon"
-					title="Contributing Engineer"
-					bio="A thoroughly experienced web and mobile developer, specializing in React and Next.js. Years of experience working with mobile, AI, and finance applications. A contributing engineer at biddropper, producing high-quality code and full-stack design."
-					linkedin="https://www.linkedin.com/in/forrestdevs/"
-					github="https://github.com/ForrestDevs"
-				/>
 			</div>
 		</div>
 	);
